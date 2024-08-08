@@ -1,0 +1,20 @@
+
+---
+
+### Example Project Code for GitHub
+
+**Dataset**: Let's use a sample dataset like the Titanic dataset from Kaggle.
+
+**Steps for the Jupyter Notebook**:
+
+1. **Import Libraries**:
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Set styles for plots
+sns.set(style="whitegrid")
+# Load the Titanic dataset
+url = 'https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv'
+df = pd.read_csv(url)
