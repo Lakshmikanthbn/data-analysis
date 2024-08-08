@@ -1,0 +1,11 @@
+# Display basic information about the dataset
+df.info()
+
+# Fill missing values for 'Age' with median
+df['Age'].fillna(df['Age'].median(), inplace=True)
+
+# Fill missing values for 'Embarked' with the most common value
+df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
+
+# Drop the 'Cabin' column due to too many missing values
+df.drop(columns=['Cabin'], inplace=True)
